@@ -1,3 +1,5 @@
+/*http://www.selfcontained.us/2009/09/16/getting-keycode-values-in-javascript/*/
+
 keycode = {
 
     getKeyCode : function(e) {

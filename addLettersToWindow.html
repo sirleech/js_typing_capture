@@ -3,11 +3,15 @@
 <head>
 <title>keyCode example</title>
 
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
 <script type="text/javascript" src="js/keycode.js"></script>
 <script type="text/javascript">
  
 function showKeyCode(e) {
-    alert( keycode.getValueByEvent(e) + "\n" + e.keyCode + "\n" );
+  if(e.keyCode == "13")
+  	$(".canvas").append("<br/>");
+  else
+  	$(".canvas").append(keycode.getValueByEvent(e));
 }
  
 
@@ -15,6 +19,8 @@ function showKeyCode(e) {
 </head>
  
 <body onkeydown="showKeyCode(event);">
-<p>Press any key.</p>
+	<p>Press any key.</p>
+	<div class="canvas">
+	</div>
 </body>
 </html>
