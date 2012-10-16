@@ -8,7 +8,7 @@
 <script type="text/javascript">
  
 function showKeyCode(e) {
-  if(e.keyCode == "13")
+  if(keycode.getValueByEvent(e) == "return")
   	$(".canvas").append("<br/>");
   else
   	$(".canvas").append(keycode.getValueByEvent(e));
