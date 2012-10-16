@@ -9,9 +9,14 @@
  
 function showKeyCode(e) {
   if(keycode.getValueByEvent(e) == "return")
+  {
+  	$(".canvas").append("(return key)");
   	$(".canvas").append("<br/>");
+  }
   else
+  {
   	$(".canvas").append(keycode.getValueByEvent(e));
+  }
 }
  
 
