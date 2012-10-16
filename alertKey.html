@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>keyCode example</title>
+
+<script type="text/javascript" src="keycode.js"></script>
+<script type="text/javascript">
+ 
+function showKeyCode(e) {
+    alert( keycode.getValueByEvent(e) + "\n" + e.keyCode + "\n" );
+}
+ 
+
+</script>
+</head>
+ 
+<body onkeydown="showKeyCode(event);">
+<p>Press any key.</p>
+</body>
+</html>
